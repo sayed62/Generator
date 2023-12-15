@@ -24,13 +24,9 @@ const quotes = [{
 },
 ]
 
-var btn = document.querySelector('#sbnt');
-var quote = document.querySelector('.quote');
-var writer= document.querySelector('.writer');
-
 function generateQuote(){
     const random = Math.floor(Math.random() * quotes.length);
-    quote.innerHTML= quotes[random].quote;
-    writer.innerHTML = quotes[random].writer;
+    document.querySelector('.quote').innerHTML= quotes[random].quote;
+    document.querySelector('.writer').innerHTML = quotes[random].writer;
 }
 
